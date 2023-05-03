@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt -br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +7,88 @@
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
     <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <p><strong><u>Introdução ao HTML:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#html">O que é HTML</a></li>
+        <li><a href="#como-funciona">Como funciona o <i>HTML</i>?</a></li>
+        <li><a href="#tags">O que são <i>Tags</i>?</a></li>
+        <li><a href="#como é">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#diferenças-listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
+    <h2 id="html">O que é HTML</h2>
+    <small><a href="inicio"></a>(Voltar) </small>
+    <p>Criado pelo britânico <strong><u> Tim Berners-Lee</u></strong>, HTML significa HiperText Markup Language, traduzindo significa: Linguagem de Marcação de Hipertexto. 
+       O HTML é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de um website.
+      Portanto, ele serve para dar significado e organizar as informações de uma página na web. Sem isso, o
+      navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos</p>
+
+
+    <h2 id="como-funciona">Como funciona o  <i>HTML</i>?</h2>
+    <small><a href="inicio"></a>(voltar) </small>
+    <p> o navegador faz a leitura do arquivo e renderiza o seu conteúdo para que o usuário final possa visualizá-lo.
+       Os arquivos .html podem ser visualizados em qualquer navegador (como Google Chrome, Safari, ou Mozilla Firefox).
+       Geralmente um site é composto por diversas páginas HTML, como por exemplo: um website que contenha três páginas
+        (uma homepage, uma página de contato e uma página de produtos) receberá ao menos três documentos .html distintos,
+         sendo uma para cada página do website.</p>
     <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="tags">O que são <i>Tags</i>?</h2>
+    <small ><a href="inicio"></a>(Voltar) </small>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p><strong><u>Tags: </u> </strong> As tags são códigos que definem toda a estrutura da página, tais como o seu tamanho, a fonte da letra, as cores, as quebras de linha e etc. A maioria dos elementos do documento HTML são compostos por uma estrutura de abertura e uma de fachamento, como <tag> e </tag>. Há também tags de estrutura única, como a  tag <br/> que realiza uma quebra de linha.
+
+      Digamos que você queria escrever um paragrafo, chamamos então a tag <strong>&lt;p&gt;</strong>, escrevemos o paragrafo e 
+      finalmente fechamos a tag com <strong>&lt;/p&gt;</strong>:</p>
+      <pre>&lt;p&gt;Meu primeiro paragrafo.&lt;/p&gt;</pre>
+    <p>
 
     <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
+   <small><a href="inicio"></a>(Voltar) </small>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>, vamos entender como é formado a estrutura básica de um documento HTML.</p>
+    <p>O documento deve conter uma declaração informando o doctype, que no caso do HTML5, basta declarar com o elemento <strong>&lt;!DOCTYPE html&gt;</strong>. Após isso iniciamos nosso documento com a tag <strong>&lt;html&gt;</strong> que deverá ser fechada ao final do documento com <strong>&lt;/html&gt;</strong>. Posteriormente, nosso documento deverá ter um elemento <strong>&lt;head&gt;</strong> que receberá todas as informações básicas da sua página, como o título, links de elementos externos, metadados, etc. Declaramos então um título para página através da tag <strong>&lt;title&gt;</strong>. Finalmente abrimos então a tag <strong>&lt;body&gt;</strong> que consiste no corpo do nosso documento, onde ficarão todos os elementos que serão renderizados na tela do navegador. Dessa forma, temos a estrutura básica do nosso documento html:</p>
+    <pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;&lt;/title&gt;
+        &lt;/head&gt;
+    
+        &lt;body&gt;
+    
+        &lt;/body&gt;
+    &lt;/html&gt;</pre>
+    <p>Para que não ocorram erros de renderização ou incompatibilidade de caracteres, devemos também declarar o padrão de teclado. No Brasil e em boa parte da América Latina, utilizamos o padrão <strong>UTF-8</strong>. Dessa forma, através da tag de metadados <strong>&lt;meta/&gt;</strong>, vamos declarar dentro de um atributo charset que nosso padrão é o UTF-8. Temos assim a estrutura básica de nosso documento HTML:</p>
+    <pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;&lt;/title&gt;
+            &lt;meta charset="utf-8"/&gt;
+        &lt;/head&gt;
+    
+        &lt;body&gt;
+    
+        &lt;/body&gt;
+    &lt;/html&gt;</pre>
     <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
+    <h2 id="diferença-listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <small><a href="inicio"></a>(Voltar) </small>
+    <p><strong><u>INSTRUÇÕES:</u> </strong> principal diferença entre a lista ordenada e a lista não-ordenada está na maneira 
+      com que os itens de cada lista são apresentados- a lista ordenada enumera os elementos; 
+      a lista não-ordenada coloca marcadores antes de cada elemento.
     <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
 
     <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos.
+       Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li><a href="#">https://www.homehost.com.br/blog/tutoriais/o-que-e-html/</a></li>
+        
     </ul>
 
 </body>
